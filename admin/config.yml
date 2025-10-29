@@ -1,6 +1,7 @@
+local_backend: true
 backend:
   name: github
-  repo: v.dermichev/PagesDecapExample
+  repo: v-dermichev/PagesDecapExample
   branch: master
   auth_type: implicit
   client_id: 2202246
@@ -17,3 +18,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      
