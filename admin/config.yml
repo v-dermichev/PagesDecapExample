@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: v.dermichev/PagesDecapExample
+  branch: master
+  auth_type: implicit
+  client_id: 2202246
+
+media_folder: "media"
+public_folder: "/public"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
